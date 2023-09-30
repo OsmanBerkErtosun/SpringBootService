@@ -33,7 +33,7 @@ public class statusController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/find-all-driver")
+    @GetMapping("/find-all-status")
     public ResponseEntity<List<status>> findAll(){
         List<status> allDriver = driverService.findAllUsersList();
         return  ResponseEntity.ok(allDriver);

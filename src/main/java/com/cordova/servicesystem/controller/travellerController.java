@@ -33,7 +33,7 @@ public class travellerController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/find-all-driver")
+    @GetMapping("/find-all-traveller")
     public ResponseEntity<List<traveller>> findAll(){
         List<traveller> allDriver = service.findAllDriverList();
         return  ResponseEntity.ok(allDriver);

@@ -17,6 +17,12 @@ public class DriverService {
     public DriverService(serviceRepository repository) {
         this.repository = repository;
     }
+
+//    public service findByServicephone(String phone) {
+//        return  repository.findByServicephone(phone);
+//
+//    }
+
     public List<service> findAllUsersList() {
         return repository.findAll();
     }

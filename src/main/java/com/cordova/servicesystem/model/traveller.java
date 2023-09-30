@@ -25,5 +25,6 @@ public class traveller {
     private String password;
     private String tc;
     private String plate;
+    private String serviceId;
 
 }

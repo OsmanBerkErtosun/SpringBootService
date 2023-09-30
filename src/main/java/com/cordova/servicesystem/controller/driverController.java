@@ -49,36 +49,19 @@
 //
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 package com.cordova.servicesystem.controller;
 
 import com.cordova.servicesystem.dto.driverLogin;
 import com.cordova.servicesystem.model.service;
 import com.cordova.servicesystem.service.DriverService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 
@@ -117,5 +100,17 @@ public class driverController {
         return  ResponseEntity.ok(driverById);
     }
 
+//    @PostMapping("/login")
+//    public ResponseEntity<String> login(@RequestBody Map<String, String> loginData) {
+//        String phone = loginData.get("phone");
+//        String password = loginData.get("password");
+//
+//        service user = driverService.findByServicephone(phone);
+//
+//        if (user == null || !user.getPhone().equals(phone) || !user.getPassword().equals(password)) {
+//            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Giriş başarısız!");
+//        }
+//        return ResponseEntity.ok("Giriş başarılı!");
+//    }
 
 }
